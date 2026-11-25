@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.conteiner {
+    background-color: #F8F9FA;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o site tenha no mínimo o tamanho da tela */
+    margin: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main, .container {
+    max-width: 1100px; /* Prende a largura máxima do conteúdo do trabalho */
+    width: 100%;       /* Permite que ele se ajuste se a tela for menor que isso */
+    margin: 40px auto; /* O 'auto' centraliza o bloco inteiro na tela automaticamente */
+    padding: 0 20px;   /* Evita que o texto encoste nas bordas em telas pequenas */
+    flex: 1;           /* Mantém o truque de empurrar o rodapé para o chão */
+}
+
+/* Cabeçalho / Menu */
+header {
+    background-color: #1A2B4C;
+    color: #FFFFFF;
+    padding: 20px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    top: 0;
+}
+
+h1{
+    font-size: 50px;
+}
+
+nav{
+    background-color: #2c3e50; /* Fundo azul escuro elegante */
+    padding: 12px;
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: #ffffff;            /* Texto branco para dar excelente contraste */
+    text-decoration: none;     /* Remove o sublinhado padrão */
+    margin: 0 12px;            /* Cria o espaçamento ideal entre um link e outro */
+    font-size: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+/* resto da pargina */
+a:hover {
+    color: #00A8FF;
+}
+
+.secao-titulo {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.secao-titulo::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #2ecc71;
+    margin: 10px auto 0;
+}
+
+
+
+p {
+    text-indent: 60px;
+}
+
+h3{
+    text-indent: 30px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    font-size: 14px;
+}
+
+table{
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid #000 ;
+}
+
+td{
+    border: 1px solid #000 ;
+}
+
+.organizasao{
+    font-size: 20px;
+}
